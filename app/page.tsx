@@ -1,101 +1,78 @@
-import Image from "next/image";
+import WorkExperience from './_components/WorkExperience';
+import Image from 'next/image';
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+const Home = () => {
+	return (
+		<div className='flex flex-col items-center justify-center mx-auto'>
+			<div className='flex items-center jusifty-center min-h-[calc(100vh)]'>
+				<div className='m-5 p-4 rounded-lg '>
+					<h1 className='flex text-3xl font-bold mb-8 ml-5'>hey, i'm tim shaw.</h1>
+					<div className='relative'>
+						<Image src='/polaroid.png' alt='' className='rounded w-96 ' width={384} height={417} />
+						<Image
+							src='/arrow.png'
+							alt=''
+							className='absolute -bottom-16 md:-bottom-32 -right-6 md:-right-36 size-20 md:size-44 -rotate-12'
+							width={80}
+							height={80}
+						/>
+					</div>
+				</div>
+			</div>
+			<WorkExperience
+				logo='/zotana logo.png'
+				logoClassName='border border-gray-100'
+				name='zotana'
+				description='building my own integrated productivity tool'
+				role='one man show, 2024-now'
+				explaination='i founded zotana - system that integrates all my tools in a way that works for me. i am currently working on the first version.'
+			>
+				<div className='group md:p-12 p-4 md:mx-0 mx-4 rounded-xl bg-red-50 flex items-center justify-center'>
+					<img src='/zotana full.png' alt='' className='group-hover:scale-105 duration-500' />
+				</div>
+			</WorkExperience>
+			<WorkExperience
+				logo='/tradestation logo.png'
+				logoClassName='border border-gray-100'
+				name='tradestation technologies'
+				description='automated testing on a legacy platform, 0 to 1'
+				role='sdet intern, 2023-now'
+				explaination="i solo'd the automated ui testing on a crm system from 2007, and helped with other day-to-day stuff."
+			>
+				<div className='group md:p-12 p-4 md:mx-0 mx-4 rounded-xl bg-blue-50 flex items-center justify-center'>
+					<img src='/tradestation full.png' alt='' className='group-hover:scale-105 duration-500' />
+				</div>
+				<div className='w-full text-right'>
+					<p className='text-gray-300 font-mono'>COULDNT SHOW REAL DATA, NDA</p>
+				</div>
+			</WorkExperience>
+			<WorkExperience
+				logo='/neuron logo.png'
+				logoClassName='bg-blue-900 p-0.5'
+				name='neuron theraputics'
+				description='helping stroke patients with cognative therapy'
+				role='founding engineer, 2022-2024'
+				explaination='i delivered 5 projects: cloud deployment, a user dashboard, internal data analytics, an intake assessment, and 15 games.'
+			>
+				<div className='md:p-12 p-4 hover:p-2 md:hover:p-8 duration-500 md:mx-0 mx-4 rounded-xl bg-[#e4fae4] flex items-center justify-center'>
+					<video src='/neuron clip.mp4' className='md:rounded-3xl rounded' autoPlay muted loop playsInline />
+				</div>
+			</WorkExperience>
+			<WorkExperience
+				logo='/mymun logo.svg'
+				logoClassName='border border-gray-100 p-0'
+				name='mymun'
+				description='ranking model united nations conferences'
+				role='frontend engineer, 2023'
+				explaination='i cold called and pitched myself to the mymun team. then i designed and coded the frontend of a conference ranking system.'
+				last
+			>
+				<div className='group md:p-12 p-4 md:mx-0 mx-4 rounded-xl bg-yellow-50 flex items-center justify-center'>
+					<img src='/mymun full.png' alt='' className='group-hover:scale-105 duration-500' />
+				</div>
+			</WorkExperience>
+		</div>
+	);
+};
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
-}
+export default Home;

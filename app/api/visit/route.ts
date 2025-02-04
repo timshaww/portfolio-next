@@ -12,7 +12,7 @@ async function openDb() {
 	});
 }
 
-export async function GET(req: NextRequest) {
+export async function GET() {
 	try {
 		const db = await openDb();
 		await db.exec('CREATE TABLE IF NOT EXISTS counter (id INTEGER PRIMARY KEY, count INTEGER)');
@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
 
 		const countRow = await db.get('SELECT count FROM counter WHERE id = 1');
 		return NextResponse.json({ count: countRow?.count || 0 });
-	} catch (error) {
+	} catch {
 		return NextResponse.json({ error: 'Database error' }, { status: 500 });
 	}
 }

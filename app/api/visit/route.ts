@@ -43,7 +43,7 @@ export async function GET() {
 		});
 
 		return NextResponse.json({ count: newCount });
-	} catch (error) {
+	} catch {
 		return NextResponse.json({ error: 'Database error' }, { status: 500 });
 	}
 }

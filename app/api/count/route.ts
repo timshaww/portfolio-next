@@ -15,7 +15,7 @@ export async function GET() {
         }
 
         return NextResponse.json({ count: counter?.count || 0 });
-    } catch (error) {
+    } catch {
         return NextResponse.json({ error: 'Database error' }, { status: 500 });
     }
 }

@@ -6,7 +6,7 @@ const Home = () => {
 		<div className='flex flex-col items-center justify-center mx-auto'>
 			<div className='flex items-center jusifty-center min-h-[calc(100vh)]'>
 				<div className='m-5 p-4 rounded-lg '>
-					<h1 className='flex text-3xl font-bold mb-8 ml-5'>hey, i'm tim shaw.</h1>
+					<h1 className='flex text-3xl font-bold mb-8 ml-5'>hey, i&apos;m tim shaw.</h1>
 					<div className='relative'>
 						<Image src='/polaroid.png' alt='' className='rounded w-96 ' width={384} height={417} />
 						<Image

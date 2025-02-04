@@ -18,7 +18,7 @@ export async function GET() {
         const countRow = await db.get('SELECT count FROM counter WHERE id = 1');
 
         return NextResponse.json({ count: countRow?.count || 0 });
-    } catch (error) {
+    } catch {
         return NextResponse.json({ error: 'Database error' }, { status: 500 });
     }
 }

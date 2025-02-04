@@ -32,8 +32,6 @@ const Donate = () => {
 		return () => clearTimeout(interval);
 	}, []);
 
-	// Function to animate the count
-
 	return (
 		<div className='flex flex-col items-center justify-center min-h-[calc(100vh-150px)] mt-20 px-4'>
 			<div className='w-full max-w-3xl flex flex-col items-center justify-center mt-28 mb-28'>

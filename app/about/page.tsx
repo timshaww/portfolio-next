@@ -15,7 +15,7 @@ const About = () => {
 					<div id='div2' className='flex flex-col'>
 						<h1 className='font-semibold text-2xl'>nice to meet ya !</h1>
 						<p className='text-gray-500 text-lg mt-3'>
-							i'm from south florida and attend the university of miami. i currently work as an sdet intern at tradestation and am
+							i&apos;m from south florida and attend the university of miami. i currently work as an sdet intern at tradestation and am
 							building a few other projects.
 						</p>
 					</div>
@@ -27,7 +27,7 @@ const About = () => {
 			</div>
 			<div className='md:grid md:grid-cols-3 flex flex-col max-w-3xl w-full gap-5 mt-16 items-start'>
 				<div className='flex flex-col'>
-					<h2 className='text-gray-500 text-md'>WHAT I'M DOING: </h2>
+					<h2 className='text-gray-500 text-md'>WHAT I&apos;M DOING: </h2>
 					<p className='text-gray-500 text-md'>
 						finishing up at umiami and matching startup founders with{' '}
 						<a href='https://spark-founders.com/' className='underline'>
@@ -46,7 +46,7 @@ const About = () => {
 					</p>
 				</div>
 				<div className='flex flex-col'>
-					<h2 className='text-gray-500 text-md'>WHAT I'M READING: </h2>
+					<h2 className='text-gray-500 text-md'>WHAT I&apos;M READING: </h2>
 					<p className='text-gray-500 text-md'>
 						zen and the art of motorcycle maintainence <br />- robert m. pirsig
 					</p>

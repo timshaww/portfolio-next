@@ -40,7 +40,7 @@ const Donate = () => {
 			</Head>
 			<div className='flex flex-col items-center justify-center min-h-[calc(100vh-150px)] mt-20 px-4'>
 				<div className='w-full max-w-3xl flex flex-col items-center justify-center mt-28 mb-28'>
-					<p className='text-2xl font-semibold '>amount donated this month:</p>
+					<p className='text-2xl font-semibold '>amount donated this year:</p>
 					<div className='h-16'>
 						{count !== null ? (
 							<div className='flex flex-row '>
@@ -63,7 +63,8 @@ const Donate = () => {
 						)}
 					</div>
 					<p className='text-gray-500 mt-12 text-center'>each time someone visits this page, i&apos;ll donate $1.</p>
-					<p className='text-gray-500 text-center'>max one dollar per person per month.</p>
+					<p className='text-gray-500 text-center'>max one dollar per person per month. </p>
+					<p className='text-gray-500 text-center'>donation will be sent at the end of 2025.</p>
 				</div>
 				<div className='mt-12 w-full max-w-3xl flex flex-col items-center'>
 					<h2 className='font-semibold text-lg'>
@@ -73,7 +74,8 @@ const Donate = () => {
 						</a>
 						.
 					</h2>
-					<p className='my-4'>in 2024, i lost two people very close to me.</p>
+					<p className='mt-4'>in 2024, i lost two people very close to me.</p>
+					<p className='mb-4'>donations are made in their memory.</p>
 					<p>
 						<span className='font-semibold'>vlad zhuravskyy</span>, my best friend, june 30th.
 					</p>

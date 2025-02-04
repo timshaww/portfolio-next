@@ -63,8 +63,8 @@ const Donate = () => {
 						)}
 					</div>
 					<p className='text-gray-500 mt-12 text-center'>each time someone visits this page, i&apos;ll donate $1.</p>
+					<p className='text-gray-500 text-center'>my donation will be sent at the end of 2025.</p>
 					<p className='text-gray-500 text-center'>max one dollar per person per month. </p>
-					<p className='text-gray-500 text-center'>donation will be sent at the end of 2025.</p>
 				</div>
 				<div className='mt-12 w-full max-w-3xl flex flex-col items-center'>
 					<h2 className='font-semibold text-lg'>
